@@ -4,12 +4,20 @@
 
 # The World in One Day — 19 November 2026
 
-A make.fun entry for the [news-image-20261119](https://make.fun/c/news-image-20261119)
-competition: one image that sums up the world's news of Thursday 19 November 2026,
-drawn as a newspaper front page.
+This repository is my entry for the make.fun competition
+news-image-20261119, which challenges entrants to sum up
+one day of world news in a single image.
 
-`main.ts` (Node 22, standard library only) copies `entry.png` to
-`$MAKEFUN_OUTPUT_DIR/entry.png`. Run it locally with:
+The entry takes the form of a newspaper front page. A big
+lead headline carries the day, smaller stories sit beneath
+it, and a footer strip sweeps up the remaining wire copy,
+all fitted onto one square 1024 × 1024 page.
+
+## Running it
+
+You only need Node 22; there are no dependencies to install.
+The script checks that entry.png really is a PNG file, then
+copies it unchanged into the output directory you give it:
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
@@ -17,14 +25,9 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
 ## Stories covered
 
-1. **Trump, Xi and Putin meet in Shenzhen** — the three leaders hold a
-   trilateral summit in Shenzhen.
-2. **Gulf escalation** — tensions in the Gulf climb again.
-3. **GTA VI launches** — the long-awaited game finally releases.
-4. **Jeffries nominated for Speaker** — Jeffries is put forward for the
-   Speaker nomination.
-5. **Voyager 1 reaches a light-day** — the probe passes the milestone of
-   one light-day from Earth.
-
-Also noted in the footer: Cyclone Akvan, the EU's Ukraine loan, and
-Ukraine's refinery strikes.
+- Trump, Xi and Putin meet for trilateral talks in Shenzhen.
+- The Gulf escalates: US strikes hit IRGC sites on Qeshm Island, and Iran retaliates against US bases in Bahrain and Kuwait.
+- GTA VI launches at last.
+- Hakeem Jeffries is nominated as Speaker of the US House.
+- Voyager 1 puts a full light-day between itself and Earth.
+- In the footer: Cyclone Akvan, the EU's €45 billion loan for Ukraine, and Ukraine striking two Russian refineries.
